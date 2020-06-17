@@ -13,7 +13,6 @@ public class BaseTest {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String DB_URL = "jdbc:mysql://localhost/comics";
     static final String USER = "root";
-    //static final String USER = "admin";
     static final String PASS = "admin";
     static protected Connection conn = null;
 
