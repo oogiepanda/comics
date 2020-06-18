@@ -1,6 +1,5 @@
 package com.oogie.view;
 
-import com.oogie.controller.ComicServiceJPA;
 import com.oogie.controller.CredentialsServiceJPA;
 import com.oogie.model.CredentialsEntity;
 
@@ -27,12 +26,12 @@ public class CredentialsGui {
     private CredentialsServiceJPA credentialsServiceJPA;
     private List<CredentialsEntity> credentials;
 
-    public CredentialsGui (final MainApp mainApp, final EntityManager entityManager) {
+    public CredentialsGui(final MainApp mainApp, final EntityManager entityManager) {
         this.mainApp = mainApp;
         this.entityManager = entityManager;
         credentialsServiceJPA = new CredentialsServiceJPA(entityManager);
         frame = new JFrame("Enter Your Credentials");
-        frame.setSize(250,180);
+        frame.setSize(250, 180);
         panel = new JPanel();
         usernameTextField = new JTextField(20);
         passwordPField = new JPasswordField(20);

@@ -17,8 +17,7 @@ public class MainApp {
     private static EntityManagerFactory emfactory;
     List<CredentialsEntity> credentials = new ArrayList<>();
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         MainApp mainApp = new MainApp();
         mainApp.run();
     }
@@ -28,7 +27,7 @@ public class MainApp {
         final JFrame frame = new JFrame("User or Guest");
         FlowLayout flowLayout = new FlowLayout();
         frame.setLayout(flowLayout);
-        frame.setSize(300,100);
+        frame.setSize(300, 100);
         JButton userButton = new JButton("User");
         JButton guestButton = new JButton("Guest");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -52,7 +51,7 @@ public class MainApp {
                 CredentialsEntity credentialsEntity = new CredentialsEntity();
                 credentialsEntity.setAffiliation(0);
                 credentials.add(credentialsEntity);
-                ComicListGui comicListGui = new ComicListGui(mainApp,entityManager,credentials);
+                ComicListGui comicListGui = new ComicListGui(mainApp, entityManager, credentials);
                 comicListGui.frame.setVisible(true);
                 comicListGui.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                 frame.dispose();
