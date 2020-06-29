@@ -1,8 +1,6 @@
 package com.oogie.controller;
 
 import com.oogie.model.ComiclistEntity;
-import com.oogie.model.CredentialsEntity;
-import org.antlr.runtime.tree.CommonErrorNode;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
